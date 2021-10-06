@@ -1,0 +1,26 @@
+body{
+    background: #a1887f url(background/aromatic-beans-blur-773958.jpg);
+}
+h1 {
+    color: white;
+}
+.container .card-body{
+    background: #bcaaa4;
+}
+.card-body{
+    color: white;
+    font-family: sans-serif;
+}
+.btn  {
+    background-color: #4CAF50; /* Green */
+    border: 0.5px solid white;
+    border-radius: 50%;
+
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+
+}

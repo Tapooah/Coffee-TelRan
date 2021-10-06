@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee-TelRan</title>
+    <link rel="icon" href="icon/logo.svg">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <style>
+        form :invalid {
+            border-color: #F22121;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>
+        Coffee-TelRan
+    </h1>
+    <div class="card">
+        <div class="card-body">
+            <form data-coffee-role="form">
+                <div class="form-group">
+                    <label for="coffeeOrder">What kind of Coffee do you want, darling?</label>
+                    <input id="coffeeOrder" class="form-control" name="coffee" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Give me your email, sweety:</label>
+                    <input class="form-control" id="email" name="emailAddress" placeholder="name@tel-ran.com"
+                           type="email" required data-coffee-role="email">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" name="size" type="radio" value="small" checked>
+                        Small
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" name="size" type="radio" value="medium">
+                        Medium
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" name="size" type="radio" value="large">
+                        Large
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="flavor">Choose yor fav Flavor, honey:</label>
+                    <select class="form-control" name="flavor" id="flavor">
+                        <option value="none">Keep clear my coffee!</option>
+                        <option value="vanilla">Vanilla boom</option>
+                        <option value="mocha">Mocha strong</option>
+                        <option value="caramel">Salty caramel</option>
+                        <option value="chocolate">Dark chocolate</option>
+                        <option value="cinnamon">Spicy cinnamon</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="strength">How strong, little one?</label>
+                    <input class="form-control-range" id="strength" name="strength" type="range" value="90">
+                </div>
+
+                <button type="submit" class="btn btn-outline-secondary">DAVAI!</button>
+                <button type="reset" class="btn btn-outline-secondary">Reset</button>
+
+            </form>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h4>
+                Pending orders:
+            </h4>
+            <div data-coffee-role="checklist">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/jquery-3.3.1.js"></script>
+<script src="scripts/formhandler.js"></script>
+<script src="scripts/checklist.js"></script>
+<script src="scripts/truck.js"></script>
+<script src="scripts/orders.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
